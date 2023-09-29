@@ -1,0 +1,75 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2.5rem;
+    font-family: calibri;
+    color: #fff;
+}
+
+.box {
+    background-color: #999;
+    border: 1px solid #fff;
+}
+
+.container {
+    height: 100vh;
+    background-color: #333;  
+    display: grid;    
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+    column-gap: 2rem;/* colunas  */
+    row-gap: 5rem;/* linhas  */
+    gap: 5px;
+
+    /* alinhamento horizontal  */
+    justify-content: center;
+
+    /* primeira coluna no comeco, ultima no fim  */
+    /* justify-content: space-between; */
+
+    /* espaço entre elementos é maior que entre as extremidades  */
+    /* justify-content: space-around; */
+
+    /* mesmo espaço entre os elementos e as extremidades */
+    /* justify-content: space-evenly; */
+
+    /* alinhamento vertical  */
+     align-content: center;
+    /* align-content: start;
+    align-content: center; */
+
+    /* alinhamento de conteudo - horizontal  */
+    /* justify-items: stretch; ocupa todo o espaço dele  */
+    justify-items: end;
+    justify-items: start;
+    justify-items: center;
+
+    /* alinhamento de conteudo - vertical  */
+    align-items: start;
+    align-items: end;
+    align-items: stretch;
+    align-items: center;
+
+    .out{
+        /* alinha o proprio conteudo  */
+        justify-self: start;
+        align-self: end;
+    }
+
+    .in{
+        /* criada por mim  */
+        justify-self: end;
+        align-self: end;
+    }
+    
+
+}
